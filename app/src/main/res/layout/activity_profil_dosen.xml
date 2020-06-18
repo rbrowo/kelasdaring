@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profil"
+    tools:context=".dosen.ProfilDosen">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:drawableLeft="@drawable/ic_home_main"
+        android:background="@null"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <ImageView
+        android:id="@+id/myPict"
+        android:layout_marginTop="145dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:src="@drawable/dosen_profil_ic"/>
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_below="@+id/myPict"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Dosen"
+        android:textColor="#36175e"
+        android:textSize="30dp"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/tvNama"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:text="yourmail@mail.com"
+        android:textColor="#36175e"
+        android:textSize="18dp"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_below="@id/tvEmail"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stylebutton"
+        android:text="Log Out"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

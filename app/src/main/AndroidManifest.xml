@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kelasonline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Kelas Daring"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".materi.EditorMateriD"/>
+        <activity android:name=".materi.EditorMateriM"/>
+        <activity android:name=".materi.DaftarMateriD"/>
+        <activity android:name=".materi.DaftarMateriM"/>
+        <activity android:name=".tanyajawab.EditorJawabanM"/>
+        <activity android:name=".tanyajawab.EditorJawabanD"/>
+        <activity android:name=".tanyajawab.DaftarTanyaD"/>
+        <activity android:name=".tanyajawab.DaftarTanyaM"/>
+        <activity android:name=".tanyajawab.TanyaDosen"/>
+        <activity android:name=".jadwal.DaftarJadwalM"/>
+        <activity android:name=".jadwal.EditorJadwal"/>
+        <activity android:name=".jadwal.DaftarJadwalD"/>
+        <activity android:name=".dosen.DaftarDosen"/>
+        <activity android:name=".mahasiswa.DaftarMahasiswa"/>
+        <activity android:name=".dosen.HomeDosen" />
+        <activity android:name=".dosen.ProfilDosen" />
+        <activity android:name=".dosen.RegisterDosen" />
+        <activity android:name=".dosen.LoginDosen" />
+        <activity android:name=".mahasiswa.HomeMahasiswa" />
+        <activity android:name=".mahasiswa.ProfilMahasiswa" />
+        <activity android:name=".mahasiswa.RegisterMahasiswa" />
+        <activity android:name=".mahasiswa.LoginMahasiswa" />
+        <activity
+            android:name=".MainActivity"/>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+    </application>
+
+</manifest>

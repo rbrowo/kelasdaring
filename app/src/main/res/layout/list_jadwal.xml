@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/row_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/stylelist">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture"
+        android:src="@drawable/ic_jadwal"
+        android:layout_height="55dp"
+        android:layout_width="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/LayoutKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="90dp"
+        android:weightSum="2"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/kelas"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/picture"
+            android:layout_marginTop="10dp"
+            android:text="Nama Kelas"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#36175e"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/LayoutKelas"
+        android:background="#d4d4d4"
+        android:layout_alignLeft="@+id/LayoutKelas" />
+
+    <LinearLayout
+        android:id="@+id/LayoutMatkul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LayoutKelas"
+        android:layout_alignStart="@+id/LayoutKelas"
+        android:layout_below="@+id/LayoutKelas"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:text="Type Pet"
+        android:textSize="15sp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/nmMatkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Matkul"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"
+            android:textColor="#36175e"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutDosen"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/LayoutMatkul"
+        android:layout_alignStart="@+id/LayoutMatkul"
+        android:layout_below="@+id/LayoutMatkul"
+        android:layout_marginRight="20dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:text="Type Pet"
+        android:textSize="15sp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/nmDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dosen"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15sp"
+            android:textColor="#36175e"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

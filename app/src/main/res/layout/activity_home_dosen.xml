@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profil"
+    tools:context=".dosen.HomeDosen">
+
+    <TextView
+        android:id="@+id/tvHalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:text="Halo!"
+        android:textColor="#36175e"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/gumbo"/>
+
+    <TextView
+        android:id="@+id/tvNanya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text="Mau Ngapain Hari Ini?"
+        android:textColor="#36175e"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/gumbo"/>
+
+    <Button
+        android:id="@+id/btnJadwal"
+        android:layout_below="@id/tvNanya"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/styleshape"
+        android:drawableTop="@drawable/ic_jadwal"
+        android:text="Buka Jadwal"
+        android:textColor="#36175e"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnMhs"
+        android:layout_below="@id/tvNanya"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="215dp"
+        android:background="@drawable/styleshape"
+        android:drawableTop="@drawable/ic_mhs"
+        android:text="Lihat Mahasiswa"
+        android:textColor="#36175e"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnMateri"
+        android:layout_below="@id/btnJadwal"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/styleshape"
+        android:drawableTop="@drawable/ic_materi"
+        android:text="Share Materi "
+        android:textColor="#36175e"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnJawab"
+        android:layout_below="@id/btnMhs"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="215dp"
+        android:background="@drawable/styleshape"
+        android:drawableTop="@drawable/ic_pertanyaan"
+        android:text="Jawab Mahasiswa"
+        android:textColor="#36175e"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_below="@id/btnJawab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="275dp"
+        android:background="@null"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableTop="@drawable/dosen_icon"
+        android:text="Profil"
+        android:textColor="#36175e"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_below="@+id/btnProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Dosen"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="yourmail@mail.com"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

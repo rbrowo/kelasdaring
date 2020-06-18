@@ -1,0 +1,2 @@
+rootProject.name='KelasOnline'
+include ':app'

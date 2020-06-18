@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTxtLogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="WHO ARE YOU?"
+        android:textColor="#e8d1ac"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/kabouter"/>
+
+    <Button
+        android:id="@+id/btnDosen"
+        android:layout_below="@id/tvTxtLogin"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/styleshape"
+        android:drawableTop="@drawable/dosen_icon"
+        android:text="Dosen"
+        android:textColor="#36175e"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/btnMhs"
+        android:layout_below="@id/tvTxtLogin"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="215dp"
+        android:background="@drawable/styleshape"
+        android:drawableTop="@drawable/mhs_icon"
+        android:text="Mahasiswa"
+        android:textColor="#36175e"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jobless"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

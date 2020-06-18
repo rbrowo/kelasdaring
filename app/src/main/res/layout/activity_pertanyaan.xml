@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8d1ac"
+    tools:context=".tanyajawab.TanyaDosen">
+
+            <TextView
+                android:id="@+id/tvTanyaJawab"
+                android:text="Tanya Jawab Dosen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#36175e"
+                android:fontFamily="@font/gumbo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/etSubjek"
+                    android:layout_below="@+id/tvTanyaJawab"
+                    android:hint="Subjek"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#36175e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/styleshape"/>
+
+                <EditText
+                    android:id="@+id/nmMhs"
+                    android:hint="Nama Mahasiswa"
+                    android:layout_below="@+id/etSubjek"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#36175e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/styleshape"/>
+
+                <EditText
+                    android:id="@+id/nmDosen"
+                    android:hint="Nama Dosen"
+                    android:layout_below="@id/nmMhs"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#36175e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/styleshape"/>
+
+                <EditText
+                    android:id="@+id/nmMatkul"
+                    android:hint="Nama Matkul"
+                    android:layout_below="@id/nmDosen"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#36175e"
+                    android:scrollbars="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/styleshape"/>
+
+                <EditText
+                    android:id="@+id/etTanya"
+                    android:hint="Pertanyaan"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#36175e"
+                    android:layout_below="@id/nmMatkul"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:gravity="top|start"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal"
+                    android:background="@drawable/styleshape"/>
+
+
+                <Button
+                    android:id="@+id/btnKirim"
+                    android:layout_below="@id/etTanya"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/stylebutton"
+                    android:text="Kirim Pertanyaan"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/jobless"
+                    android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_below="@+id/btnProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Nama Dosen"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="yourmail@mail.com"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
